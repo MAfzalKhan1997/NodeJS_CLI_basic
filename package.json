@@ -1,0 +1,22 @@
+{
+  "name": "hellousername",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAfzalKhan1997/NodeJS_HelloUserName.git"
+  },
+  "author": "Muhammad Afzal Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAfzalKhan1997/NodeJS_HelloUserName/issues"
+  },
+  "homepage": "https://github.com/MAfzalKhan1997/NodeJS_HelloUserName#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

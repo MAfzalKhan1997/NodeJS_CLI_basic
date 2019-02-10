@@ -1,12 +1,29 @@
-console.log('Starting App')
+console.log("Starting App.js");
 
-const fs = require('fs');
-const os = require('os');
+const fs = require("fs");
+const os = require("os");
+const notes = require("./notes.js");
+const _ = require("lodash");
 
-var user = os.userInfo();
+var filteredArray = _.uniq(["Afzal", 1, "Afzal", 1, 2, 3]);
+console.log(filteredArray);
 
-fs.appendFile('greetings.txt', `Hello ${user.username}`, (error) => {
-    if (error) {
-        console.log('unable to write file')
-    }
-}); 
+// console.log(_.isString(true));
+// console.log(_.isString("Muhammad Afzal"));
+
+// var res = notes.addNote();
+// console.log(res);
+
+// console.log("Result:", notes.addition(2, 6));
+
+// var user = os.userInfo();
+
+// fs.appendFile(
+//   "greetings.txt",
+//   `Hello ${user.username}, You are of ${notes.age} !`,
+//   error => {
+//     if (error) {
+//       console.log("unable to write file");
+//     }
+//   }
+// );
