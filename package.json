@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MAfzalKhan1997/NodeJS_HelloUserName#readme",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "nodemon": "^1.19.0"
   }
 }

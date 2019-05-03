@@ -8,3 +8,5 @@ module.exports.addNote = () => {
 module.exports.addition = (a, b) => {
   return a + b;
 };
+
+module.exports.age = 21;
