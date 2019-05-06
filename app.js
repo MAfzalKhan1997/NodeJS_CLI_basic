@@ -1,4 +1,4 @@
-console.log("Starting App.js");
+// console.log("Starting App.js");
 
 const fs = require("fs");
 const os = require("os");
@@ -7,14 +7,30 @@ const yargs = require("yargs");
 
 const notes = require("./notes.js");
 
-const argv = yargs.argv;
-console.log("Process", process.argv);
-console.log("Yargs", argv);
+// console.log("Process", process.argv);
+// console.log("Yargs", argv);
+const argv = yargs
+  .command("add", "Add a new note", {
+    title: {
+      describe: "Title of note",
+      demand: true,
+      alias: "t"
+    },
+    body: {
+      describe: "Body of note",
+      demand: true,
+      alias: "b"
+    }
+  })
+  .help().argv;
 
-let command = process.argv[2];
+let command = argv._[0];
 
 if (command === "add") {
-  notes.addNote(argv.title, argv.body);
+  var note = notes.addNote(argv.title, argv.body);
+  if (note) {
+    console.log("Note Created!");
+  }
 } else if (command === "list") {
   console.log("Listing all Notes");
 } else {
