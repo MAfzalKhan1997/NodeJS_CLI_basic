@@ -1,2 +1,2 @@
-# NodeJS_HelloUserName
-1st  Simple Node.js app creating file and writing user info in that file.
+# NodeJS_CLI_basic
+Simple Node.js app with basic CLI functionalities.
